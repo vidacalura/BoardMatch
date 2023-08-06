@@ -86,27 +86,44 @@
             </section>
 
             <section id="apoiar">
-                <h3 class="text-center font-bold"> Apoie o projeto fazendo uma doação: </h3>
+                <h2 class="text-center font-bold"> Apoie o projeto fazendo uma doação </h2>
 
-                <h3 class="text-center text-[3.5vh] pt-4"> PIX: 4c33679d-e9e9-4793-a9d8-257c4959c6fb </h3>
+                <h3 class="text-center pt-4 font-light"> Ao doar 5 R$ ou mais você recebe: </h3>
+                <div class="md:flex md:justify-center gap-8 pt-8"> 
+                    <div class="card-beneficio-doacao">
+                        <h3> Acesso prioritário às versões Alpha e Beta </h3>
 
-                <h3 class="text-center font-bold pt-28"> Ao doar 5 R$ ou mais você recebe: </h3>
-                <div class="flex justify-center pt-4 text-[2vh]">
-                    <ul> 
-                        <li> * Acesso prioritário às versões Alpha e Beta </li>
-                        <li> * Selo de verificação de usuário no app </li>
-                        <li> * Acesso às notícias do desenvolvimento do aplicativo </li>
-                    </ul>
+                        <div class="flex justify-center pt-16"> <img src="imgs/beneficio1.svg" alt="Homem passando por linha de chegada"> </div>
+                    </div>
+                    <div class="card-beneficio-doacao">
+                        <h3> Selo de verificação no app </h3>
+
+                        <div class="flex justify-center pt-12"> <img src="imgs/beneficio2.svg" alt="Selo de verificação"> </div>
+                    </div>
+                    <div class="card-beneficio-doacao">
+                        <h3> Acesso exclusivo às últimas novidades! </h3>
+
+                        <div class="flex justify-center pt-16"> <img src="imgs/beneficio3.svg" alt="Garoto em um jetpack"> </div>
+                    </div>
                 </div>
 
-                <div class="flex justify-center mt-20 px-4 md:mx-[25vw]">
-                    <p class="text-sm">
-                        Para comprovar a doação, entre em <a href="" class="underline cursor-pointer">nosso servidor do discord</a> e contate um ADM,
-                        ou então envie um email com o mesmo email que você cadastrou na fila de espera para 
-                        o email <a href="mailto:boardmatchapp@gmail.com" class="underline cursor-pointer">boardmatchapp@gmail.com</a> com o comprovante da doação.
-                        Caso a doação não seja comprovada, o usuário perderá o direito aos benefícios citados
-                        acima.
-                    </p>
+                <div class="flex justify-center"> <button id="doar-btn"> Doe aqui </button> </div>
+
+                <div id="doar-info-bg" class="fixed flex justify-center top-0 bg-opacity-25 bg-boardma-gray-900 w-screen h-screen hidden">
+                    <div id="doar-info-div">
+                        <h2 class="text-white font-bold"> Chave PIX: </h2>
+                        <input class="bg-boardma-gray-800 text-boardma-gray-100 font-bold w-[60%] text-center rounded my-4 py-2 px-3 shadow-md" type="text" readonly value="4c33679d-e9e9-4793-a9d8-257c4959c6fb">
+
+                        <div class="flex justify-center pt-[25vh]">
+                            <p class="text-sm text-boardma-gray-100">
+                                Para comprovar a doação, entre em <a href="" class="underline cursor-pointer">nosso servidor do discord</a> e contate um ADM,
+                                ou então envie um email com o mesmo email que você cadastrou na fila de espera para 
+                                o email <a href="mailto:boardmatchapp@gmail.com" class="underline cursor-pointer">boardmatchapp@gmail.com</a> com o comprovante da doação
+                                <br> <br>
+                                Caso a doação não seja comprovada, o usuário perderá o direito aos benefícios
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 

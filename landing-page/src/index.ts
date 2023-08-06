@@ -1,12 +1,17 @@
 const inputEmail: HTMLInputElement = <HTMLInputElement>document.getElementById("input-email");
 const registroBtn: HTMLButtonElement = <HTMLButtonElement>document.getElementById("registrar-btn");
 const resRegistroContainer: HTMLElement = <HTMLElement>document.getElementById("res-registro");
+const doarBtn: HTMLButtonElement = <HTMLButtonElement>document.getElementById("doar-btn");
+const doarInfoDiv: HTMLElement = <HTMLElement>document.getElementById("doar-info-bg");
 
 registroBtn.addEventListener("click", registrarEmailNaFila);
 inputEmail.addEventListener("keypress", (e: KeyboardEvent) => {
     if (e.key === "Enter")
         registrarEmailNaFila(<Event>e);
 });
+
+doarBtn.addEventListener("click", mostrarInfoDoacao);
+doarInfoDiv.addEventListener("click", mostrarInfoDoacao);
 
 async function registrarEmailNaFila(e: Event): Promise<void> {
     e.preventDefault();
@@ -57,4 +62,14 @@ function emailEhValido(email: string): boolean {
 function mostrarErroRegistro(erro: string): void {
     resRegistroContainer.style.color = "#FF4949";
     resRegistroContainer.textContent = erro; 
+}
+
+function mostrarInfoDoacao(e: Event): void {
+    if (doarInfoDiv.className.includes("hidden")) {
+        doarInfoDiv.classList.remove("hidden");
+    }
+    else {
+        if (e.target.id === "doar-info-bg")
+            doarInfoDiv.classList.add("hidden");
+    }
 }

@@ -37,11 +37,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var inputEmail = document.getElementById("input-email");
 var registroBtn = document.getElementById("registrar-btn");
 var resRegistroContainer = document.getElementById("res-registro");
+var doarBtn = document.getElementById("doar-btn");
+var doarInfoDiv = document.getElementById("doar-info-bg");
 registroBtn.addEventListener("click", registrarEmailNaFila);
 inputEmail.addEventListener("keypress", function (e) {
     if (e.key === "Enter")
         registrarEmailNaFila(e);
 });
+doarBtn.addEventListener("click", mostrarInfoDoacao);
+doarInfoDiv.addEventListener("click", mostrarInfoDoacao);
 function registrarEmailNaFila(e) {
     return __awaiter(this, void 0, void 0, function () {
         var email;
@@ -96,4 +100,13 @@ function emailEhValido(email) {
 function mostrarErroRegistro(erro) {
     resRegistroContainer.style.color = "#FF4949";
     resRegistroContainer.textContent = erro;
+}
+function mostrarInfoDoacao(e) {
+    if (doarInfoDiv.className.includes("hidden")) {
+        doarInfoDiv.classList.remove("hidden");
+    }
+    else {
+        if (e.target.id === "doar-info-bg")
+            doarInfoDiv.classList.add("hidden");
+    }
 }

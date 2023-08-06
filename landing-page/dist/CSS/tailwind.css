@@ -70,6 +70,26 @@ section {
     @apply pt-[15vh];
 }
 
+.card-beneficio-doacao {
+    @apply md:w-[20vw] text-center font-bold px-16 py-12 bg-white rounded-lg shadow-md;
+}
+
+.card-beneficio-doacao h3 {
+    @apply text-boardma-blue;
+}
+
+#doar-btn {
+    @apply bg-boardma-gray-900 text-white text-[2.5vh] font-bold rounded-xl shadow-md mt-10 px-[10vw] py-6;
+}
+
+#doar-info-bg {
+    backdrop-filter: blur(2px);
+}
+
+#doar-info-div {
+    @apply bg-boardma-gray-900 text-center md:w-[40vw] h-[60vh] mt-[20vh] p-12 rounded-xl shadow-md;
+}
+
 #res-registro {
     @apply pt-3 font-bold;
 }
