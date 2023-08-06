@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    @apply bg-boardma-gray-100 overflow-x-hidden;
+}
+
+h2 { @apply md:text-[6vh] text-2xl text-boardma-gray-900 font-extrabold; line-height: 8vh; }
+h3 { @apply md:text-[3vh] text-lg text-boardma-gray-800; line-height: 4vh; }
+p { @apply md:text-[2vh] text-boardma-gray-800; }
+
+header {
+    @apply flex fixed w-screen md:px-[3vw] px-[5vw] md:py-[3vh] py-[2vh] shadow-md bg-white justify-between;
+}
+
+nav {
+    @apply flex items-center font-bold md:text-[3vh] text-[2vh] gap-[2vw] text-boardma-gray-800;
+}
+
+.logo {
+    @apply md:text-[4.5vh] text-2xl font-bold text-boardma-blue;
+}
+
+li {
+    @apply list-none;
+}
+
+main {
+    @apply pt-[10vh];
+}
+
+section {
+    @apply w-screen h-screen;
+}
+
+#hero {
+    @apply md:flex pt-[10vh]; 
+}
+
+#input-email {
+    @apply w-80 outline-none border-none px-3 py-2 rounded-md text-boardma-gray-800 shadow-sm;
+}
+
+#registrar-btn {
+    @apply bg-boardma-blue text-boardma-gray-100 font-bold ml-3 sm:mt-0 mt-3 py-2 px-3 rounded-xl shadow-md outline-none border-none;
+}
+
+#sobre {
+    @apply bg-boardma-blue pt-[10vh] sm:pt-[15vh]; 
+}
+
+#sobre-container {
+    @apply 2xl:pt-40 pt-8 sm:pt-28 flex justify-center gap-6 md:gap-40;
+}
+
+.sobre-caixa {
+    @apply text-sm sm:text-base w-[40vw] pb-8 sm:pb-14 text-center text-boardma-blue px-[3vw] bg-boardma-gray-100 rounded-lg shadow-md;
+}
+
+.sobre-caixa h3 {
+    @apply font-bold py-8;
+}
+
+#apoiar {
+    @apply pt-[15vh];
+}
+
+#res-registro {
+    @apply pt-3 font-bold;
+}

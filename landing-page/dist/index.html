@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/de94e301a2.js" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" type="text/css" href="CSS/output.css">
+        <script src="JS/script.js" defer> </script>
+        <title> BoardMatch </title>
+
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="#"> <h1 class="logo"> BoardMatch </h1> </a>
+        
+            <nav>
+                <li> <a href="#sobre"> Sobre </a> </li>
+                <li> <a href="#apoiar"> Apoiar </a> </li>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="md:w-[65vw] w-full pt-[4vh] text-center px-6 md:px-28">
+                    <h2 class="pb-[2vh]"> Encontre novos parceiros e desafios no tabuleiro! </h2>
+                        <h3 class="md:px-20 pb-[3vh]">
+                        Encontre outros jogadores para jogar em um tabuleiro físico!
+                    </h3>
+
+                    <div class="flex pb-[1.5vh] justify-center w-full"> <hr class="md:w-[60%] w-[80%]"> </div>
+
+                    <div>
+                        <span class="text-[2vh] text-boardma-gray-800 font-light">
+                            Registre seu email para entrar na fila de espera para beta testing!  
+                        </span>
+
+                        <br>
+                        <br>
+
+                        <input type="email" placeholder="email@exemplo.com" id="input-email">
+                        <button id="registrar-btn"> Registrar </button>
+
+                        <br>
+
+                        <p id="res-registro"> </p>
+                    </div>
+                </div>
+
+                <div class="w-[30vw] md:block hidden"> <img src="imgs/cell.png" class="w-full" alt="Celular rodando BoardMatch"> </div> 
+            </section>
+
+            <section id="sobre">
+                <div class="md:pr-[10vw] px-6 md:pl-[6vw]"> 
+                    <h2 class="pb-4 text-boardma-gray-100"> Sobre o projeto </h2>
+
+                    <p class="text-boardma-gray-100">
+                        O BoardMatch é um aplicativo mobile <a href="" class="underline">100% gratuito e open-source</a>, que tem como
+                        objetivo permitir que jogadores de xadrez, damas e etc. se encontrem pessoalmente para jogar
+                        com tanta facilidade quanto online
+                    </p>
+                </div>
+
+                <div id="sobre-container">
+                    <div id="sobre-jogador" class="sobre-caixa">
+                        <h3> Você é um jogador? </h3>
+
+                        <p>
+                            Encontre os melhores torneios e jogadores de sua região para treinar ou 
+                            se divertir jogando seu jogo de tabuleiro favorito!
+                        </p>
+                    </div>
+
+                    <div id="sobre-host" class="sobre-caixa">
+                        <h3> Você é um host? </h3>
+
+                        <p>
+                            Encontre jogadores para participarem de seu torneio, oficial ou amistoso, com 
+                            apenas alguns cliques!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="apoiar">
+                <h3 class="text-center font-bold"> Apoie o projeto fazendo uma doação: </h3>
+
+                <h3 class="text-center text-[3.5vh] pt-4"> PIX: 4c33679d-e9e9-4793-a9d8-257c4959c6fb </h3>
+
+                <h3 class="text-center font-bold pt-28"> Ao doar 5 R$ ou mais você recebe: </h3>
+                <div class="flex justify-center pt-4 text-[2vh]">
+                    <ul> 
+                        <li> * Acesso prioritário às versões Alpha e Beta </li>
+                        <li> * Selo de verificação de usuário no app </li>
+                        <li> * Acesso às notícias do desenvolvimento do aplicativo </li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-center mt-20 px-4 md:mx-[25vw]">
+                    <p class="text-sm">
+                        Para comprovar a doação, entre em <a href="" class="underline cursor-pointer">nosso servidor do discord</a> e contate um ADM,
+                        ou então envie um email com o mesmo email que você cadastrou na fila de espera para 
+                        o email <a href="mailto:boardmatchapp@gmail.com" class="underline cursor-pointer">boardmatchapp@gmail.com</a> com o comprovante da doação.
+                        Caso a doação não seja comprovada, o usuário perderá o direito aos benefícios citados
+                        acima.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="w-screen absolute flex justify-between py-[2vh] px-[6vw] bg-boardma-gray-900 text-boardma-gray-100">
+            <div>
+                <h2 class="text-boardma-blue font-bold text-[3vh]"> BoardMatch </h2>
+            </div>
+
+            <div>
+                <ul class="flex gap-8 text-xl pt-[2vh]">
+                    <li> <a href="https://github.com/vidacalura/BoardMatch-landing-page" class="hover:text-boardma-blue transition-all ease-in-out"> <i class="fa-brands fa-github"> </i> </a> </li>
+                    <li> <a href="mailto:boardmatchapp@gmail.com" class="hover:text-boardma-blue transition-all ease-in-out"> <i class="fa-solid fa-envelope"> </i> </a> </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+</html>
