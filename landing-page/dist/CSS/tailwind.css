@@ -6,6 +6,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @apply bg-boardma-gray-100 overflow-x-hidden;
 }
@@ -13,6 +17,10 @@ body {
 h2 { @apply md:text-[6vh] text-2xl text-boardma-gray-900 font-extrabold; line-height: 8vh; }
 h3 { @apply md:text-[3vh] text-lg text-boardma-gray-800; line-height: 4vh; }
 p { @apply md:text-[2vh] text-boardma-gray-800; }
+
+@media only screen and (max-width: 768px) {
+    h2 { line-height: 5vh; }
+}
 
 header {
     @apply flex fixed w-screen md:px-[3vw] px-[5vw] md:py-[3vh] py-[2vh] shadow-md bg-white justify-between;
@@ -55,11 +63,11 @@ section {
 }
 
 #sobre-container {
-    @apply 2xl:pt-40 pt-8 sm:pt-28 flex justify-center gap-6 md:gap-40;
+    @apply 2xl:pt-40 pt-8 sm:pt-28 flex justify-center gap-4 md:gap-40;
 }
 
 .sobre-caixa {
-    @apply text-sm sm:text-base w-[40vw] pb-8 sm:pb-14 text-center text-boardma-blue px-[3vw] bg-boardma-gray-100 rounded-lg shadow-md;
+    @apply text-sm sm:text-base w-40 md:w-[40vw] pb-8 sm:pb-14 text-center text-boardma-blue px-[3vw] bg-white rounded-lg shadow-md;
 }
 
 .sobre-caixa h3 {
@@ -67,11 +75,11 @@ section {
 }
 
 #apoiar {
-    @apply pt-[15vh];
+    @apply pt-[15vh] md:h-screen h-[110rem];
 }
 
 .card-beneficio-doacao {
-    @apply md:w-[20vw] text-center font-bold px-16 py-12 bg-white rounded-lg shadow-md;
+    @apply w-[80vw] ml-[10vw] mt-6 md:mt-0 md:ml-0 md:w-[20vw] text-center font-bold p-8 2xl:px-16 2xl:py-12 bg-white rounded-lg shadow-md;
 }
 
 .card-beneficio-doacao h3 {
@@ -79,7 +87,7 @@ section {
 }
 
 #doar-btn {
-    @apply bg-boardma-gray-900 text-white text-[2.5vh] font-bold rounded-xl shadow-md mt-10 px-[10vw] py-6;
+    @apply bg-boardma-gray-900 text-white text-[2vh] 2xl:text-[2.5vh] font-bold rounded-xl shadow-md mt-10 md:px-[8vw] px-6 py-3 2xl:px-[10vw] 2xl:py-6;
 }
 
 #doar-info-bg {
@@ -87,7 +95,7 @@ section {
 }
 
 #doar-info-div {
-    @apply bg-boardma-gray-900 text-center md:w-[40vw] h-[60vh] mt-[20vh] p-12 rounded-xl shadow-md;
+    @apply bg-boardma-gray-900 text-center w-[90vw] md:w-[40vw] h-[60vh] mt-[20vh] p-12 rounded-xl shadow-md;
 }
 
 #res-registro {

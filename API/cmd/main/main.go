@@ -1,15 +1,29 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"log"
+	"os"
 
-	routes "github.com/vidacalura/BoardMatch/routes"
+	"github.com/gin-contrib/cors"
+	"github.com/joho/godotenv"
+
+	routes "github.com/vidacalura/BoardMatch/internals/routes"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	r := routes.NovoRouter()
 
-
+	r.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"*"},
+        AllowMethods:     []string{"PUT", "GET", "POST", "DELETE"},
+        AllowHeaders: 	  []string{"*"},
+        AllowCredentials: true,
+	}))
 	
-	r.Run()
+	r.Run("0.0.0.0:" + os.Getenv("PORT"))
 }

@@ -1,9 +1,9 @@
 package models 
 
-import (
+type EmailRequest struct {
+	Email string `json:"email"`
+}
 
-)
-
-func main() {
-	
+type ResEmailable struct {
+	State string `json:"state"`
 }
