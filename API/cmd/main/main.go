@@ -19,6 +19,9 @@ func main() {
 	r := routes.NovoRouter()
 
 	r.Use(cors.New(cors.Config{
+		AllowOriginFunc: func(origin string) bool {
+            return true
+        },
 		AllowOrigins:     []string{"*"},
         AllowMethods:     []string{"PUT", "GET", "POST", "DELETE"},
         AllowHeaders: 	  []string{"*"},

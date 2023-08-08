@@ -18,7 +18,7 @@ func ConectarDB(db *sql.DB) *sql.DB {
 		log.Fatal(err)
 	}
 
-	db, err = sql.Open("mysql", os.Getenv("connection_string"))
+	db, err = sql.Open("mysql", os.Getenv("DSN"))
 	if err != nil {
     	log.Fatal(err)
 	}
