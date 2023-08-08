@@ -59,7 +59,8 @@ function registrarEmailNaFila(e) {
                         mostrarErroRegistro("Email inválido. Cheque seu email e tente novamente.");
                         return [2 /*return*/];
                     }
-                    return [4 /*yield*/, fetch("", {
+                    return [4 /*yield*/, fetch("https://boardmatch-api.up.railway.app/api/email-list", {
+                            //await fetch("http://0.0.0.0:4000/api/email-list", {
                             method: "POST",
                             headers: {
                                 "Content-type": "Application/JSON"

@@ -23,7 +23,8 @@ async function registrarEmailNaFila(e: Event): Promise<void> {
         return;
     }
 
-    await fetch("", {
+    await fetch("https://boardmatch-api.up.railway.app/api/email-list", {
+    //await fetch("http://0.0.0.0:4000/api/email-list", {
         method: "POST",
         headers: {
             "Content-type": "Application/JSON"
