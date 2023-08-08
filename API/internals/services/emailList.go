@@ -12,11 +12,14 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 
 	models "github.com/vidacalura/BoardMatch/internals/models"
+	utils "github.com/vidacalura/BoardMatch/internals/utils"
 )
 
 var db *sql.DB
 
 func RegistrarEmail(c *gin.Context) {
+	db = utils.ConectarDB(db)
+
 	var emailReq models.EmailRequest
 
 	err := c.BindJSON(&emailReq)

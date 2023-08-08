@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/gin-contrib/cors"
 	"github.com/joho/godotenv"
+	"github.com/gin-contrib/cors"
 
 	routes "github.com/vidacalura/BoardMatch/internals/routes"
 )
