@@ -12,14 +12,11 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 
 	models "github.com/vidacalura/BoardMatch/internals/models"
-	utils "github.com/vidacalura/BoardMatch/internals/utils"
 )
 
-var db *sql.DB
+var DB *sql.DB
 
 func RegistrarEmail(c *gin.Context) {
-	db = utils.ConectarDB(db)
-
 	var emailReq models.EmailRequest
 
 	err := c.BindJSON(&emailReq)
@@ -35,7 +32,7 @@ func RegistrarEmail(c *gin.Context) {
 	}
 
 	// Insere email no banco
-	_, err = db.Exec("INSERT INTO EmailList (email, data_cad) VALUES(?, NOW());", emailReq.Email)
+	_, err = DB.Exec("INSERT INTO EmailList (email, data_cad) VALUES(?, NOW());", emailReq.Email)
 	if err != nil {
 		log.Println(err)
 		c.IndentedJSON(http.StatusInternalServerError, gin.H{ "error": "Erro ao registrar email no banco de dados. Tente novamente mais tarde." })

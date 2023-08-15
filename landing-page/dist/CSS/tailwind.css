@@ -63,11 +63,11 @@ section {
 }
 
 #sobre-container {
-    @apply 2xl:pt-40 pt-8 sm:pt-28 flex justify-center gap-4 md:gap-40;
+    @apply 2xl:pt-40 pt-8 sm:pt-28 flex justify-center gap-4 lg:gap-[10vw];
 }
 
 .sobre-caixa {
-    @apply text-sm sm:text-base w-40 md:w-[40vw] pb-8 sm:pb-14 text-center text-boardma-blue px-[3vw] bg-white rounded-lg shadow-md;
+    @apply text-sm sm:text-base w-[40vw] pb-8 sm:pb-14 text-center text-boardma-blue px-[3vw] bg-white rounded-lg shadow-md;
 }
 
 .sobre-caixa h3 {
@@ -75,11 +75,11 @@ section {
 }
 
 #apoiar {
-    @apply pt-[15vh] md:h-screen h-[110rem];
+    @apply pt-[15vh] lg:h-screen h-[110rem];
 }
 
 .card-beneficio-doacao {
-    @apply w-[80vw] ml-[10vw] mt-6 md:mt-0 md:ml-0 md:w-[20vw] text-center font-bold p-8 2xl:px-16 2xl:py-12 bg-white rounded-lg shadow-md;
+    @apply w-[80vw] ml-[10vw] mt-6 lg:mt-0 lg:ml-0 lg:w-[20vw] text-center font-bold p-8 2xl:px-16 2xl:py-12 bg-white rounded-lg shadow-md;
 }
 
 .card-beneficio-doacao h3 {
@@ -95,7 +95,7 @@ section {
 }
 
 #doar-info-div {
-    @apply bg-boardma-gray-900 text-center w-[90vw] md:w-[40vw] h-[60vh] mt-[20vh] p-12 rounded-xl shadow-md;
+    @apply bg-boardma-gray-900 text-center w-[90vw] lg:w-[40vw] h-[60vh] mt-[20vh] p-12 rounded-xl shadow-md;
 }
 
 #res-registro {
