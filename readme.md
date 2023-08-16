@@ -16,8 +16,8 @@ eventos e torneios do seu jogo de tabuleiro favorito!
 O BoardMatch é uma aplicação 100% gratuita e open-source, e por isso, é parte
 do trabalho de diversos generosos contribuidores que ajudam o projeto a se manter de pé.
 
-Caso você tenha interesse em contribuir com estr projeto também, cheque 
-<a href="https://github.com/vidacalura/BoardMatch/blob/main/contributing.md">nossa página de contribuição!</a>
+Caso você tenha interesse em contribuir com este projeto também, cheque 
+<a href="https://github.com/vidacalura/BoardMatch/blob/main/contributing.md">nosso manual de contribuição!</a>
 
 #
 

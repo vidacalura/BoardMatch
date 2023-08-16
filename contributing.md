@@ -18,26 +18,29 @@ Caso você queira ajudar com o projeto mas não saiba por onde começar, entre
 administrador do servidor, lá nós falamos sobre o desenvolvimento do projeto
 e tarefas em aberto.
 
+
 ## Ajudando com erros:
 
-Caso você tenha identificado um erro, primeiro abra uma issue antes de tentar resolvê-lo.
+* Caso você tenha encontrado um erro: Primeiro abra uma issue antes de tentar resolvê-lo.
 Muitos problemas podem ser resolvidos em alguns minutos por pessoas com uma maior experiência
 com o código do projeto, sendo mais eficiente apenas informar um desenvolvedor que já conhece o
 projeto.
 
-Caso você deseje ajudar a lidar com erros já relatados, procure pela label `help wanted` e/ou
+* Caso você deseje ajudar a lidar com erros já relatados: Procure pela label `help wanted` e/ou
 `good first issue`. Caso a issue não possua nenhuma dessas tags, ou já tenha sido designada a 
 alguém, recomendamos que você evite tentar criar uma nova pull request para ela do 0, pois 
 muito provavelmente, acabará sendo descartada.
 
+
 ## Implementando novas features:
 
-Então você tem uma ideia para uma grande nova feature? Nós adoraríamos ouví-la!
+#### Então você tem uma ideia para uma grande nova feature? Nós adoraríamos ouví-la!
 
 Então não deixe de nos contá-la <a href="https://github.com/vidacalura/BoardMatch/issues">na aba de issues</a>.
 Assim, evitamos que você se dê ao trabalho de desenvolver uma nova feature que já esta sendo implementada
 ou a qual não teremos espaço ou suporte para implementar e manter. E caso sua proposta seja aceita, permite
 que a gerenciemos melhor e até mesmo disponibilizemos outros desenvolvedores para te ajudar com ela!
+
 
 ## Ajudando com documentação:
 
@@ -48,6 +51,7 @@ por si mesmo.
 
 Qualquer contribuição com documentação é extremamente bem-vinda, e é tão importante quanto contribuições
 com o código do BoardMatch.
+
 
 ## Pull requests:
 

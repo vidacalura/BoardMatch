@@ -13,6 +13,10 @@ inputEmail.addEventListener("keypress", (e: KeyboardEvent) => {
 doarBtn.addEventListener("click", mostrarInfoDoacao);
 doarInfoDiv.addEventListener("click", mostrarInfoDoacao);
 
+/**
+* Registra o email do usuário na email-list do BoardMatch
+* @param {Event} e Evento padrão da função
+*/
 async function registrarEmailNaFila(e: Event): Promise<void> {
     e.preventDefault();
     resRegistroContainer.textContent = "";
@@ -60,11 +64,19 @@ function emailEhValido(email: string): boolean {
     return true;
 }
 
+/**
+ * Mostra uma mensagem de erro no registro de email formatado 
+ * @param {String} erro Erro a ser mostrado ao usuário
+ */
 function mostrarErroRegistro(erro: string): void {
     resRegistroContainer.style.color = "#FF4949";
     resRegistroContainer.textContent = erro; 
 }
 
+/**
+ * Mostra um modal com informações para doação
+ * @param {Event} e Evento padrão da função
+ */
 function mostrarInfoDoacao(e: Event): void {
     if (doarInfoDiv.className.includes("hidden")) {
         doarInfoDiv.classList.remove("hidden");
